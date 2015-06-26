@@ -53,6 +53,8 @@
 		A9C64560B1FECC26721580B9 /* res in Resources */ = {isa = PBXBuildFile; fileRef = A2DB4B988069559D32852337 /* res */; };
 		B0DA30B01B3D436B00AC4085 /* HerosThings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0DA30AE1B3D436B00AC4085 /* HerosThings.cpp */; };
 		B0DA30B31B3D437F00AC4085 /* HeroAtrrible.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0DA30B11B3D437F00AC4085 /* HeroAtrrible.cpp */; };
+		B0DA30B61B3D4CEA00AC4085 /* Things.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0DA30B41B3D4CEA00AC4085 /* Things.cpp */; };
+		B0DA30B91B3D4EE900AC4085 /* RoomMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0DA30B71B3D4EE900AC4085 /* RoomMap.cpp */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
 		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
@@ -112,6 +114,10 @@
 		B0DA30AF1B3D436B00AC4085 /* HerosThings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HerosThings.h; path = Hero/HerosThings.h; sourceTree = "<group>"; };
 		B0DA30B11B3D437F00AC4085 /* HeroAtrrible.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HeroAtrrible.cpp; path = Hero/HeroAtrrible.cpp; sourceTree = "<group>"; };
 		B0DA30B21B3D437F00AC4085 /* HeroAtrrible.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HeroAtrrible.h; path = Hero/HeroAtrrible.h; sourceTree = "<group>"; };
+		B0DA30B41B3D4CEA00AC4085 /* Things.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Things.cpp; path = Things/Things.cpp; sourceTree = "<group>"; };
+		B0DA30B51B3D4CEA00AC4085 /* Things.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Things.h; path = Things/Things.h; sourceTree = "<group>"; };
+		B0DA30B71B3D4EE900AC4085 /* RoomMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RoomMap.cpp; path = Room/RoomMap.cpp; sourceTree = "<group>"; };
+		B0DA30B81B3D4EE900AC4085 /* RoomMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RoomMap.h; path = Room/RoomMap.h; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -344,6 +350,8 @@
 		B0DA30A61B3D3C6200AC4085 /* Room */ = {
 			isa = PBXGroup;
 			children = (
+				B0DA30B71B3D4EE900AC4085 /* RoomMap.cpp */,
+				B0DA30B81B3D4EE900AC4085 /* RoomMap.h */,
 			);
 			name = Room;
 			sourceTree = "<group>";
@@ -365,6 +373,8 @@
 		B0DA30AA1B3D3C9D00AC4085 /* Things */ = {
 			isa = PBXGroup;
 			children = (
+				B0DA30B41B3D4CEA00AC4085 /* Things.cpp */,
+				B0DA30B51B3D4CEA00AC4085 /* Things.h */,
 			);
 			name = Things;
 			sourceTree = "<group>";
@@ -482,8 +492,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0DA30B61B3D4CEA00AC4085 /* Things.cpp in Sources */,
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				46880B8A19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */,
+				B0DA30B91B3D4EE900AC4085 /* RoomMap.cpp in Sources */,
 				B0DA30B01B3D436B00AC4085 /* HerosThings.cpp in Sources */,
 				B0DA30B31B3D437F00AC4085 /* HeroAtrrible.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
